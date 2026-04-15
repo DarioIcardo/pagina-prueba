@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Web con IA en 24h - Crea, publica y posiciona tu negocio</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-container": "#ffcec7",
+                    "surface-container": "#eaefec",
+                    "on-surface-variant": "#424654",
+                    "surface-variant": "#dfe4e0",
+                    "inverse-primary": "#b2c5ff",
+                    "tertiary-fixed": "#ffdad5",
+                    "surface-dim": "#d6dbd8",
+                    "secondary-fixed": "#d1e4ff",
+                    "on-tertiary-fixed": "#410001",
+                    "primary": "#0040a1",
+                    "on-secondary-fixed": "#001d35",
+                    "tertiary-fixed-dim": "#ffb4a9",
+                    "error-container": "#ffdad6",
+                    "surface-container-high": "#e4e9e6",
+                    "secondary": "#436182",
+                    "on-secondary-container": "#405e7e",
+                    "surface-container-highest": "#dfe4e0",
+                    "on-primary-fixed-variant": "#0040a1",
+                    "primary-fixed": "#dae2ff",
+                    "surface": "#f6faf7",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "outline": "#737785",
+                    "secondary-container": "#b9d7fd",
+                    "on-primary-fixed": "#001847",
+                    "on-secondary-fixed-variant": "#2a4968",
+                    "on-error-container": "#93000a",
+                    "on-primary-container": "#ccd8ff",
+                    "on-surface": "#171d1b",
+                    "primary-container": "#0056d2",
+                    "on-tertiary-fixed-variant": "#930005",
+                    "error": "#ba1a1a",
+                    "on-error": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "inverse-on-surface": "#edf2ef",
+                    "primary-fixed-dim": "#b2c5ff",
+                    "background": "#f6faf7",
+                    "surface-bright": "#f6faf7",
+                    "on-secondary": "#ffffff",
+                    "surface-container-low": "#f0f5f2",
+                    "secondary-fixed-dim": "#abc9ef",
+                    "on-background": "#171d1b",
+                    "tertiary": "#940005",
+                    "tertiary-container": "#c10009",
+                    "outline-variant": "#c3c6d6",
+                    "inverse-surface": "#2c3230",
+                    "surface-tint": "#0056d2"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader", "serif"],
+                    "body": ["Inter", "sans-serif"],
+                    "label": ["Inter", "sans-serif"]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .signature-gradient {
+            background: linear-gradient(135deg, #0040a1 0%, #0056d2 100%);
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<a class="text-xl font-bold tracking-tight text-on-surface dark:text-slate-100 font-headline italic" href="#">Web con IA en 24h</a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-on-surface-variant dark:text-slate-400 hover:text-primary dark:hover:text-primary-container transition-colors text-sm font-medium" href="#modulos">Módulos</a>
+<a class="text-on-surface-variant dark:text-slate-400 hover:text-primary dark:hover:text-primary-container transition-colors text-sm font-medium" href="#beneficios">Beneficios</a>
+<a class="text-on-surface-variant dark:text-slate-400 hover:text-primary dark:hover:text-primary-container transition-colors text-sm font-medium" href="#precios">Precios</a>
+<a class="text-on-surface-variant dark:text-slate-400 hover:text-primary dark:hover:text-primary-container transition-colors text-sm font-medium" href="#faq">Preguntas</a>
+</div>
+<div class="flex items-center gap-4">
+<a class="hidden sm:block text-primary font-semibold hover:underline transition-all text-sm" href="#precios">Acceder al curso</a>
+<a class="signature-gradient text-on-primary px-5 py-2.5 rounded-lg font-semibold text-sm scale-95 hover:scale-100 duration-200 ease-in-out" href="https://wa.me/34663912656?text=Quiero%20entrar%20en%20el%20grupo">WhatsApp</a>
+</div>
+</div>
+</nav>
+<main class="pt-24 overflow-hidden">
+<!-- SECTION 1: HERO -->
+<section class="relative px-8 py-16 md:py-32 max-w-7xl mx-auto overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="z-10 lg:col-span-12 text-center flex flex-col items-center">
+<h1 class="font-headline text-5xl md:text-7xl font-bold leading-tight tracking-tight text-on-surface mb-6 italic">
+                        Crea una <span class="text-primary underline decoration-primary-fixed decoration-8 underline-offset-4">web profesional</span> que atrae clientes en 24h sin saber programar.
+                    </h1>
+<p class="text-xl md:text-2xl text-on-surface-variant max-w-2xl mb-10 leading-relaxed">
+                        IA para Negocios: Menos horas de gestión, más clientes en tu puerta. Olvida el código y el diseño técnico.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<a class="signature-gradient text-on-primary px-8 py-4 rounded-xl text-lg font-bold flex items-center justify-center gap-2 hover:shadow-xl transition-all" href="#precios">
+                            Acceder al curso
+                            <span class="material-symbols-outlined">rocket_launch</span>
+</a>
+<a class="border-2 border-outline-variant/30 text-primary px-8 py-4 rounded-xl text-lg font-bold flex items-center justify-center gap-2 hover:bg-surface-container-low transition-all" href="https://wa.me/34663912656?text=Quiero%20entrar%20en%20el%20grupo">
+                            Escríbeme por WhatsApp
+                            <span class="material-symbols-outlined">chat_bubble</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: PROBLEMA -->
+<section class="bg-surface-container-low py-24 px-8">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="font-headline text-4xl md:text-5xl font-bold mb-12">¿Tu web no te trae clientes? ¿Pierdes tiempo en tareas manuales?</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+<div class="p-8 bg-surface-container-lowest rounded-xl">
+<span class="material-symbols-outlined text-tertiary text-4xl mb-4">timer_off</span>
+<p class="text-lg font-medium">Pagas agencias que tardan meses y cobran miles de euros por una web que no controlas.</p>
+</div>
+<div class="p-8 bg-surface-container-lowest rounded-xl">
+<span class="material-symbols-outlined text-tertiary text-4xl mb-4">search_off</span>
+<p class="text-lg font-medium">Tu negocio no aparece en Google. Tus competidores están llevándose a tus clientes potenciales hoy.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: SOLUCIÓN -->
+<section class="py-24 px-8 max-w-7xl mx-auto">
+<div class="flex flex-col lg:flex-row gap-16 items-center">
+<div class="lg:w-1/2">
+<div class="bg-secondary-container/30 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">lightbulb</span>
+</div>
+<h2 class="font-headline text-4xl md:text-5xl font-bold mb-6 italic">La solución: Un sistema paso a paso, rápido y sin conocimientos técnicos.</h2>
+<p class="text-lg text-on-surface-variant mb-8 leading-relaxed">
+                        He condensado años de experiencia en marketing y tecnología en un método de 24 horas. No necesitas ser programador ni diseñador. Solo necesitas seguir el mapa que he trazado para ti.
+                    </p>
+<div class="space-y-4">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-medium text-lg">Cero líneas de código.</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-medium text-lg">Resultados profesionales inmediatos.</span>
+</div>
+</div>
+</div>
+<div class="lg:w-1/2 bg-surface-container rounded-2xl p-2">
+<img alt="Dashboard showing AI data and web builder interface" class="rounded-xl" data-alt="A clean laptop screen displaying a modern AI website builder interface with drag-and-drop elements and clear analytics dashboard." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzIsjAgXHISIAS-0UXnHHWJo-XjP-AxZdLftntygDXyxPrAPbpdcWBQY5K0dT5LXOggyzAYLtmyQWUzwQtI81VlK1WHKvyFad2MAaVD8Kigl85hEw3RFPnWcNc2vghotRk6iPReydxo8dSoO8dBUA1ydwLNGehkzh39m_vb2Y1dXXj6B91D1HmtIF-Xou9-javOQcLs9bDjX4Sz70VntxrB-GCBsa3i3mWfR_oKHT5J4eiak67Z21f7hBTUkfLKqg6BYI4Yjgo1RQ"/>
+</div>
+</div>
+</section>
+<!-- SECTION 4: BENEFICIOS (BENTO GRID) -->
+<section class="py-24 px-8 bg-surface" id="beneficios">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16 text-center">
+<h2 class="font-headline text-4xl md:text-6xl font-bold mb-4">¿Qué lograrás en este curso?</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-6">
+<div class="md:col-span-2 md:row-span-2 bg-primary-container text-on-primary-container p-10 rounded-2xl flex flex-col justify-end min-h-[400px] relative overflow-hidden group">
+<span class="material-symbols-outlined text-8xl absolute -top-8 -right-8 opacity-20 group-hover:scale-110 transition-transform">bolt</span>
+<h3 class="text-3xl font-headline font-bold mb-4 italic">Crea tu web en 1 día</h3>
+<p class="text-lg opacity-90">Olvida los meses de espera. El sistema está diseñado para que tu página web profesional esté publicada en menos de 24 horas.</p>
+</div>
+<div class="md:col-span-2 bg-surface-container-high p-10 rounded-2xl">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">edit_note</span>
+<h3 class="text-2xl font-headline font-bold mb-2 italic">Textos que venden con IA</h3>
+<p class="text-on-surface-variant">Deja que la IA redacte tus contenidos persuasivos adaptados a tu sector específico y tu público objetivo.</p>
+</div>
+<div class="bg-secondary-container p-8 rounded-2xl">
+<span class="material-symbols-outlined text-on-secondary-container text-4xl mb-4">trending_up</span>
+<h3 class="text-xl font-headline font-bold mb-2 italic">Posiciónate en Google (SEO)</h3>
+<p class="text-on-secondary-container text-sm">Aprende a usar Perplexity para encontrar las palabras clave que tus clientes ya están buscando.</p>
+</div>
+<div class="bg-surface-container-highest p-8 rounded-2xl">
+<span class="material-symbols-outlined text-on-surface text-4xl mb-4">schedule</span>
+<h3 class="text-xl font-headline font-bold mb-2 italic">Ahorra tiempo semanal</h3>
+<p class="text-on-surface-variant text-sm">Automatiza tareas rutinarias para dedicarte a lo que realmente importa en tu negocio.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: CÓMO FUNCIONA -->
+<section class="py-24 px-8 bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto">
+<h2 class="font-headline text-4xl font-bold mb-16 text-center italic">Tu camino hacia el éxito digital</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="relative">
+<div class="text-8xl font-headline font-bold text-surface-container absolute -top-12 -left-4 z-0">1</div>
+<div class="relative z-10 pt-4">
+<h4 class="text-xl font-bold mb-2">Contenido con IA</h4>
+<p class="text-on-surface-variant">Generamos la estructura y los textos de tu negocio de forma inteligente.</p>
+</div>
+</div>
+<div class="relative">
+<div class="text-8xl font-headline font-bold text-surface-container absolute -top-12 -left-4 z-0">2</div>
+<div class="relative z-10 pt-4">
+<h4 class="text-xl font-bold mb-2">Diseñas con Stitch</h4>
+<p class="text-on-surface-variant">Montamos el diseño visual sin tocar una sola línea de código.</p>
+</div>
+</div>
+<div class="relative">
+<div class="text-8xl font-headline font-bold text-surface-container absolute -top-12 -left-4 z-0">3</div>
+<div class="relative z-10 pt-4">
+<h4 class="text-xl font-bold mb-2">SEO con Perplexity</h4>
+<p class="text-on-surface-variant">Buscamos las brechas de tu competencia para superarlos en Google.</p>
+</div>
+</div>
+<div class="relative">
+<div class="text-8xl font-headline font-bold text-surface-container absolute -top-12 -left-4 z-0">4</div>
+<div class="relative z-10 pt-4">
+<h4 class="text-xl font-bold mb-2">Publicas tu web</h4>
+<p class="text-on-surface-variant">Lanzamos al mundo tu plataforma y empezamos a captar leads.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: CONTENIDO DEL CURSO -->
+<section class="py-24 px-8 max-w-5xl mx-auto" id="modulos">
+<div class="mb-16 text-center">
+<span class="text-primary font-bold tracking-widest text-sm uppercase">El Plan Maestro</span>
+<h2 class="font-headline text-5xl font-bold mt-4">Contenido del Curso</h2>
+</div>
+<div class="space-y-6">
+<details class="group bg-surface-container-low rounded-xl overflow-hidden cursor-pointer" open="">
+<summary class="flex justify-between items-center p-8 list-none">
+<span class="text-2xl font-headline font-bold italic">Módulo 1: Base estratégica</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="px-8 pb-8 text-on-surface-variant">
+<ul class="space-y-3">
+<li class="flex items-start gap-2 italic"><span class="text-primary">•</span> Definición del cliente ideal para tu sector.</li>
+<li class="flex items-start gap-2 italic"><span class="text-primary">•</span> Análisis de competencia con IA.</li>
+</ul>
+</div>
+</details>
+<details class="group bg-surface-container-low rounded-xl overflow-hidden cursor-pointer">
+<summary class="flex justify-between items-center p-8 list-none">
+<span class="text-2xl font-headline font-bold italic">Módulo 2: Contenido con IA</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="px-8 pb-8 text-on-surface-variant">
+<p>Cómo usar prompts avanzados para crear landing pages que conviertan visitas en dinero.</p>
+</div>
+</details>
+<details class="group bg-surface-container-low rounded-xl overflow-hidden cursor-pointer">
+<summary class="flex justify-between items-center p-8 list-none">
+<span class="text-2xl font-headline font-bold italic">Módulo 3: Diseño web con Stitch</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="px-8 pb-8 text-on-surface-variant">
+<p>Tutorial paso a paso para usar la herramienta de diseño más rápida del mercado actual.</p>
+</div>
+</details>
+<details class="group bg-surface-container-low rounded-xl overflow-hidden cursor-pointer">
+<summary class="flex justify-between items-center p-8 list-none">
+<span class="text-2xl font-headline font-bold italic">Módulo 4: SEO con Perplexity</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="px-8 pb-8 text-on-surface-variant">
+<p>Estrategias reales para posicionar tu web sin pagar publicidad en Google Ads.</p>
+</div>
+</details>
+</div>
+</section>
+<!-- SECTION 7: SECCIÓN POR SECTORES (SEO) -->
+<section class="py-24 px-8 bg-surface-container">
+<div class="max-w-7xl mx-auto">
+<h2 class="font-headline text-4xl font-bold mb-12 text-center">Soluciones IA por sectores</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-surface-container-lowest p-10 rounded-2xl hover:translate-y-[-8px] transition-transform duration-300">
+<span class="material-symbols-outlined text-primary text-5xl mb-6">gavel</span>
+<h3 class="text-2xl font-headline font-bold mb-4 italic">IA para abogados</h3>
+<p class="text-on-surface-variant mb-4 italic">Optimiza la captación de leads legales. Crea una web de despacho que inspire confianza y automatice consultas iniciales.</p>
+<a class="text-primary font-bold hover:underline" href="#">Saber más</a>
+</div>
+<div class="bg-surface-container-lowest p-10 rounded-2xl hover:translate-y-[-8px] transition-transform duration-300">
+<span class="material-symbols-outlined text-primary text-5xl mb-6">real_estate_agent</span>
+<h3 class="text-2xl font-headline font-bold mb-4 italic">IA para inmobiliarias</h3>
+<p class="text-on-surface-variant mb-4 italic">Vende propiedades más rápido. Genera descripciones de inmuebles y tours virtuales automáticos mediante IA.</p>
+<a class="text-primary font-bold hover:underline" href="#">Saber más</a>
+</div>
+<div class="bg-surface-container-lowest p-10 rounded-2xl hover:translate-y-[-8px] transition-transform duration-300">
+<span class="material-symbols-outlined text-primary text-5xl mb-6">storefront</span>
+<h3 class="text-2s font-headline font-bold mb-4 italic">IA para pymes</h3>
+<p class="text-on-surface-variant mb-4 italic">Automatiza tu negocio local. Desde la reserva de citas hasta la atención al cliente 24/7 sin personal extra.</p>
+<a class="text-primary font-bold hover:underline" href="#">Saber más</a>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 8: OBJECIONES -->
+<section class="py-24 px-8 max-w-4xl mx-auto">
+<h2 class="font-headline text-4xl font-bold mb-12 italic">Respondamos tus dudas</h2>
+<div class="space-y-8">
+<div>
+<h4 class="text-xl font-bold mb-2 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">help_outline</span>
+                        "No sé de tecnología"
+                    </h4>
+<p class="text-on-surface-variant pl-9">Este curso está diseñado para que mi madre pudiera hacerlo. Si sabes enviar un correo electrónico, sabes usar la IA para tu negocio.</p>
+</div>
+<div>
+<h4 class="text-xl font-bold mb-2 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">help_outline</span>
+                        "No tengo tiempo"
+                    </h4>
+<p class="text-on-surface-variant pl-9">Precisamente por eso necesitas este curso. Solo te llevará unas pocas horas aprender a automatizar lo que hoy te quita días enteros.</p>
+</div>
+<div>
+<h4 class="text-xl font-bold mb-2 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">help_outline</span>
+                        "¿Sirve para mi negocio?"
+                    </h4>
+<p class="text-on-surface-variant pl-9">Si tu negocio vende un producto o servicio a seres humanos, necesitas estar en internet. La IA se adapta a cualquier sector.</p>
+</div>
+</div>
+</section>
+<!-- SECTION 9: CTA FUERTE -->
+<section class="py-24 px-8" id="precios">
+<div class="max-w-4xl mx-auto signature-gradient rounded-3xl p-12 text-center text-on-primary shadow-2xl relative overflow-hidden">
+<div class="absolute top-0 right-0 p-8 opacity-10">
+<span class="material-symbols-outlined text-[200px]">verified</span>
+</div>
+<h2 class="font-headline text-5xl font-bold mb-6 italic">Empieza hoy mismo</h2>
+<p class="text-2xl mb-8 font-light italic">Domina la IA y transforma tu negocio en un fin de semana.</p>
+<div class="flex items-baseline justify-center gap-2 mb-10">
+<span class="text-xl line-through opacity-70">200€</span>
+<span class="text-7xl font-headline font-bold">49€</span>
+<span class="text-xl font-medium">pago único</span>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-surface text-primary px-10 py-5 rounded-xl text-xl font-bold hover:bg-surface-container-lowest transition-all shadow-lg flex items-center justify-center gap-3">
+                        Comprar curso ahora
+                        <span class="material-symbols-outlined">shopping_cart</span>
+</button>
+<a class="bg-white/10 backdrop-blur-md text-on-primary border border-white/20 px-10 py-5 rounded-xl text-xl font-bold hover:bg-white/20 transition-all flex items-center justify-center gap-3" href="https://wa.me/34663912656?text=Quiero%20entrar%20en%20el%20grupo">
+                        Pregunta por WhatsApp
+                        <span class="material-symbols-outlined">chat</span>
+</a>
+</div>
+<p class="mt-8 text-sm opacity-80 italic">Garantía de satisfacción de 14 días. Sin preguntas.</p>
+</div>
+</section>
+<!-- SECTION 10: FAQ (SEO) -->
+<section class="py-24 px-8 bg-surface-container-low" id="faq">
+<div class="max-w-4xl mx-auto">
+<h2 class="font-headline text-4xl font-bold mb-12 text-center">Preguntas Frecuentes</h2>
+<div class="divide-y divide-outline-variant/20">
+<div class="py-6">
+<h4 class="text-xl font-bold mb-2">¿Cómo crear una web con IA realmente?</h4>
+<p class="text-on-surface-variant italic">Utilizamos herramientas generativas que procesan tu idea de negocio y la transforman en código visual, estructura de menús y copys de venta automáticos.</p>
+</div>
+<div class="py-6">
+<h4 class="text-xl font-bold mb-2">¿Cuánto cuesta mantener la web?</h4>
+<p class="text-on-surface-variant italic">Te enseñaremos opciones desde muy bajo coste hasta herramientas profesionales que escalan con tu éxito.</p>
+</div>
+<div class="py-6">
+<h4 class="text-xl font-bold mb-2">¿Necesito conocimientos previos?</h4>
+<p class="text-on-surface-variant italic">Ninguno. Partimos de cero absoluto. Si sabes encender el ordenador, puedes terminar este curso.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-slate-900 w-full py-12 px-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+<div>
+<h4 class="text-lg font-bold text-on-surface font-headline italic mb-4">Web con IA en 24h</h4>
+<p class="text-on-surface-variant text-sm max-w-xs leading-relaxed">Ayudamos a pymes y autónomos en España a digitalizarse sin miedo a la tecnología gracias al poder de la Inteligencia Artificial.</p>
+</div>
+<div>
+<h4 class="text-lg font-bold text-on-surface font-headline italic mb-4">Explora</h4>
+<ul class="space-y-2 text-sm text-on-surface-variant">
+<li><a class="hover:underline transition-all hover:text-primary" href="#modulos">Módulos del curso</a></li>
+<li><a class="hover:underline transition-all hover:text-primary" href="#">Aviso Legal</a></li>
+<li><a class="hover:underline transition-all hover:text-primary" href="#">Privacidad</a></li>
+<li><a class="hover:underline transition-all hover:text-primary" href="#">Cookies</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-bold text-on-surface font-headline italic mb-4">Síguenos</h4>
+<div class="flex gap-4">
+<a class="text-on-surface-variant hover:text-primary transition-all flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-xl">account_circle</span>
+                        LinkedIn
+                    </a>
+<a class="text-on-surface-variant hover:text-primary transition-all flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-xl">photo_camera</span>
+                        Instagram
+                    </a>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-outline-variant/10 text-center md:text-left">
+<p class="text-on-surface-variant text-xs font-medium">© 2024 Web con IA en 24h. Todos los derechos reservados. Diseñado para la era de la IA.</p>
+</div>
+</footer>
+</body></html>
